@@ -3,33 +3,27 @@
 #This verification is based on string match.
 
 def sum_of_numbers(list_of_num,filter_func=None):
-    summ=0
     if filter_func==None:
-        summ=sum(list_of_num)
-    elif filter_func==odd:
-        odd_list=odd(list_of_num)
-        summ=sum(odd_list)
-        
+        return sum(list_of_num)
     elif filter_func==even:
-        even_list=even(list_of_num)
-        summ=sum(even_list)
-    
-    return summ
+        return sum(filter_func(list_of_num))
+    elif filter_func==odd:
+        return sum(filter_func(list_of_num))
 
 def even(data):
-    elist=[]
+    lis=[]
     for i in data:
         if i%2==0:
-            elist.append(i)
-    return elist
-
+            lis.append(i)
+    return lis
+    
 def odd(data):
-    olist=[]
+    lis=[]
     for i in data:
         if i%2==1:
-            olist.append(i)
-    return olist
+            lis.append(i)
+    return lis
 
-sample_data = range(1,11)
+sample_data = range(1,5)
 
 print(sum_of_numbers(sample_data,even))
