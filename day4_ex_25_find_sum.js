@@ -1,7 +1,8 @@
 //JS-Exer-25
 
 //Start writing your code here
-find_sum(n){
+
+function find_sum(n){
     var i,sum=0;
     for(i=1;i<=n;i++){
         sum=sum+i
@@ -12,4 +13,5 @@ find_sum(n){
 
 var n=6,res=0;
 res=find_sum(n);
-console.log("Result"+res);
+console.log(res);
+
