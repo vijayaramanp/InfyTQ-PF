@@ -13,3 +13,6 @@ print("%.2f Celsius is %0.2f Fahrenheit " %(c,f))
 f=1.0
 c=fahrenheit_to_celsius(f)
 print('%.2f Fahrenheit is %0.2f Celsius ' %(f,c))
+
+
+#Courtesy: https://beginnersbook.com/2019/05/python-program-to-convert-celsius-to-fahrenheit-and-vice-versa/
