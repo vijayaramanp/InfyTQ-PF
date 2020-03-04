@@ -41,3 +41,26 @@ msg2="python"
 common_characters=find_common_characters(msg1,msg2)
 print(common_characters)
 '''
+#solution 3
+'''
+#PF-Assgn-33
+def find_common_characters(msg1,msg2):
+    res=""
+    x=set(msg1)&set(msg2)
+    for char in x:
+        if char!=' ':
+            res=res+char
+    temp=''.join(sorted(set(res),key=res.index))
+    if temp==' ':
+        return -1
+    else:
+        temp=temp
+        return temp
+#Provide different values for msg1,msg2 and test your program
+msg1="Python"
+msg2="python"
+common_characters=find_common_characters(msg1,msg2)
+print(common_characters)
+
+'''
+
