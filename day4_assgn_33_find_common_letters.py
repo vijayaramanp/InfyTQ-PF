@@ -20,6 +20,36 @@ msg2="Java is a very popular language"
 common_characters=find_common_characters(msg1,msg2)
 print(common_characters)
 
+
+'''
+# This solution passess
+5 out of 6 test cases passed.
+
+1 out of 1 structural test cases passed.
+
+4 out of 5 logical test cases passed
+
+
+
+#PF-Assgn-33
+
+def find_common_characters(msg1,msg2):
+    res=''
+    for char in msg1:
+        if char in msg2 and char!=' ':
+            res=res+char
+    if res=='':
+        return -1
+    else:
+        return res
+        
+#Provide different values for msg1,msg2 and test your program
+msg1="I like Python"
+msg2="Java is a very popular language"
+common_characters=find_common_characters(msg1,msg2)
+print(common_characters)
+
+''''
 #Solution 2: 50% of the test cases passes
 '''#PF-Assgn-33
 
