@@ -1,6 +1,24 @@
 #PF-Assgn-33
 
 def find_common_characters(msg1,msg2):
+    res=''
+    for char in msg1:
+        if char in msg2 and char!=' ':
+            res=res+char
+    if res=='':
+        return -1
+    else:
+        x=''.join(sorted(set(res),key=res.index))
+        return x
+        
+#Provide different values for msg1,msg2 and test your program
+msg1="moto"
+msg2="moto"
+common_characters=find_common_characters(msg1,msg2)
+print(common_characters)
+
+'''
+def find_common_characters(msg1,msg2):
     temp=""
     for a in msg1:
         if a!=' ':
@@ -19,7 +37,7 @@ msg1="I like Python"
 msg2="Java is a very popular language"
 common_characters=find_common_characters(msg1,msg2)
 print(common_characters)
-
+'''
 
 '''
 # This solution passess
