@@ -1,11 +1,9 @@
 #PF-Assgn-36
 def create_largest_number(number_list):
     num=''
+    number_list.sort(reverse=True)
     for no in number_list:
-        maxx=max(number_list)
-        num=num+str(maxx)
-        number_list.remove(maxx)
-    num=num+str(number_list[0])
+        num=num+str(no)
     return int(num)
 
 number_list=[23,45,67]
