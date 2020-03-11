@@ -11,7 +11,7 @@ def reward_child(child_id_rewarded,extra_chocolates):
     if extra_chocolates>0:
         if child_id_rewarded in child_id:
             child_id_index=child_id.index(child_id_rewarded)
-            chocolates_received[child_id_index]+=1
+            chocolates_received[child_id_index]+=extra_chocolates
             print(chocolates_received)
         else:
             print("Child id is invalid")
