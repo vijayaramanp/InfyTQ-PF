@@ -3,7 +3,6 @@ menu=('Veg Roll','Noodles','Fried Rice','Soup')
 quantity_available=[2,200,3,0]
 
 def place_order(*item_tuple):
-    flag=0 
     for i in range(0,len(item_tuple),2):
         item_name=item_tuple[i]
         if item_name in menu:
