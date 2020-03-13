@@ -14,7 +14,6 @@ def place_order(*item_tuple):
                 break
         else:
             print(item_name," is not available")
-            break
         
 def check_quantity_available(index,quantity_requested):
     if quantity_requested<=quantity_available[index]:
