@@ -1,3 +1,5 @@
+
+# statment 3 case 2
 #PF-Exer-30
 
 def find_average(mark_list):
