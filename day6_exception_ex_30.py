@@ -1,3 +1,31 @@
+# Below code passess all test cases
+
+def find_average(mark_list):
+	total=0
+	try:
+	    for i in range(0, len(mark_list)):
+	        total+=mark_list[i]
+	    marks_avg=total/len(mark_list)
+	    return marks_avg
+	except TypeError:
+	    print("Wrong data type")
+	except NameError:
+	    print("Name Error")
+	except ZeroDivisionError:
+	    print("ZeroDivisionError")
+	except IndexError:
+	    print("index our of range")
+
+try:
+    m_list=[15,26,34,24]
+    print("Average marks:", find_average(m_list))
+except NameError:
+    print("Name Error from main")
+except TypeError:
+    print("Type error from main")
+except ValueError:
+    print("value error from main")
+'''
 
 # statment 3 case 2
 #PF-Exer-30
@@ -79,3 +107,4 @@ except TypeError:
     print("Type error from main")
 except ValueError:
     print("value error from main")
+'''
