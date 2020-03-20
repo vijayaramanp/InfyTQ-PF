@@ -8,7 +8,6 @@ def human_pyramid(no_of_people):
 
 def find_maximum_people(max_weight):
     no_of_people=1
-    prev_val=0
     while True:
         weight = human_pyramid(no_of_people)    
         
