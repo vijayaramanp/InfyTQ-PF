@@ -1,9 +1,8 @@
-Incomplete code
 
 #PF-Assgn-43
 def find_divisors(num):
     divisors=[]
-    for i in range(2, num+1):
+    for i in range(1, num+1):
         if num%i==0:
             divisors.append(i)
     return len(divisors)
