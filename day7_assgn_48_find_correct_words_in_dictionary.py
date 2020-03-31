@@ -2,9 +2,6 @@
 
 def find_correct(word_dict):
     correct_list=[0]*3
-    correct=0
-    almost_correct=0
-    wrong=0
     for key,value in word_dict.items():
         if len(key) == len(value):
             difference=0
