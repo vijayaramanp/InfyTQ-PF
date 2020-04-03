@@ -1,5 +1,8 @@
 # PF-Assgn-56
+# PF-Assgn-56
 import re
+
+
 def max_frequency_word_counter(data):
     data_dict = {}
     word = ""
@@ -21,29 +24,22 @@ def max_frequency_word_counter(data):
             break
 
     print(data_dict)
-    maxx = 0
-    prev = ''
+
     for key, value in data_dict.items():
-        if value == maxx:
-            if len(key) > len(prev):
-                maxx = value
+        if value == frequency:
+            if len(key) > len(word):
                 word = key
                 frequency = value
-                prev = key
-            else:
-                word = prev
-        elif value > maxx:
-            maxx = value
+
+        elif value > frequency:
             word = key
             frequency = value
-            prev = key
     print(word, frequency)
 
 
 # Provide different values for data and test your program.
-data = "Work like you do not need money, love like your have never your been hurt, and dance like no one is watching"
+data = "Work like you do not need money, love like you have never you been hurt, and dance like no one is watching"
 max_frequency_word_counter(data)
-
 
 
 #<h3>Solution 2<h3>
