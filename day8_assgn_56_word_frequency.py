@@ -1,7 +1,5 @@
 # PF-Assgn-56
 import re
-
-
 def max_frequency_word_counter(data):
     data_dict = {}
     word = ""
@@ -81,6 +79,32 @@ def max_frequency_word_counter(data):
     print(word, frequency)
 
 
+# Provide different values for data and test your program.
+data = "Work lik you do not need money, love lik your have never your been hurt, and dance like no one is watching"
+max_frequency_word_counter(data)
+
+
+#Solution 3
+#PF-Assgn-56
+#most frequent and lengthy word
+
+def max_frequency_word_counter(data):
+    word=""
+    frequency=0
+    data=data.lower()
+    #data=data.replace(",","")
+    lt=data.split()
+    for e in lt:
+        freq=lt.count(e)
+        if freq > frequency :
+            frequency=freq 
+            word=e
+        elif freq == frequency :
+            if len(e) > len(word) :
+                frequency=freq 
+                word=e            
+    print(word,frequency)
+    
 # Provide different values for data and test your program.
 data = "Work lik you do not need money, love lik your have never your been hurt, and dance like no one is watching"
 max_frequency_word_counter(data)
