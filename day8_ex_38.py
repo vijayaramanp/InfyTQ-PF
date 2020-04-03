@@ -9,7 +9,7 @@ calc = lambda num1,num2:num1%num2+num1-num2
 print(calc(num1,num2))
 
 square_root = lambda num3:math.sqrt(num3)
-print("{:.1f}".format(square_root(num3)))
+print(square_root(num3))
 
 square_root2= lambda num3: num3**0.5
-print("{:.1f}".format(square_root2(num3)))
+print(square_root2(num3))
